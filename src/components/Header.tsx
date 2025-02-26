@@ -31,7 +31,7 @@ export default function Header() {
       className={`fixed top-0 left-0 w-full transition-transform z-50 
         text-center pt-4 text-white md:px-50 shadow-lg
         ${isScrolled 
-            ? "transform -translate-y-2 bg-gray-800 md:flex justify-between md:py-0 md:pt-6" 
+            ? "scrolled transform -translate-y-2 bg-gray-800 md:flex justify-between md:py-0 md:pt-6" 
             : ""}`}
     >
         <a id="a-direccion" target="_blank" rel="noopener noreferrer"
