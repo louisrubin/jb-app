@@ -1,0 +1,21 @@
+
+#h2-titulo-servicios {
+    font-family: "Tienne", serif;
+    font-weight: bold;
+}
+
+.servicioCard {
+    border-radius: 20px;
+}
+.servicioCard:hover {
+    /* background-color: rgb(44, 44, 44); */
+    box-shadow: 4px 2px 10px rgba(255, 140, 46, 0.4);
+}
+
+.servicioCard h3 {
+    font-family: "Tienne", serif;
+}
+
+.servicios-conteiner p {
+    font-size: 12px;
+}

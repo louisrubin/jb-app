@@ -1,0 +1,11 @@
+import MainContent from "./MainContent";
+import Servicios from "./Servicios";
+
+export default function Main() {
+  return (
+    <>
+      <MainContent />
+      <Servicios />
+    </>
+  );
+}

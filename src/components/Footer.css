@@ -1,0 +1,21 @@
+
+#p-footer-frase {
+    font-family: "Tienne", serif;
+}
+
+#div-email-address a:hover {
+    
+    text-decoration: underline;
+}
+
+#span-jb-footer{
+    /* color: #fff9ce; */
+    color: #fff9ca;
+    font-family: "Tienne", serif;
+}
+
+#social-footer {
+    img {
+        height: 30px;
+    }
+} 
