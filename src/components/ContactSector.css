@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Noto+Sans+SC:wght@100..900&display=swap');
 
 
-
 .contact-sector {
     font-family: "Noto Sans SC", serif;
     /* font-family: "Bona Nova SC", serif; */
@@ -14,11 +13,14 @@
 
 .info-princ {
     font-weight: bold;
-    padding-bottom: 10px;
 }
 
 .tel-corr-addr a:hover {
     text-decoration: underline;
+}
+.tel-corr-addr span { 
+    padding-top: 15px;
+    display: block;
 }
 
 .contact-sector input, textarea {
@@ -26,15 +28,12 @@
     color: black;
     text-transform: uppercase;
 
-
-
     background-color: white;
     border-radius: 5px;
-    border: 1px black;
-
-    /* margin-bottom: 20px; */
     padding-left: 1em;
-    /* margin: 10px; */
+}
+.contact-sector input:focus, textarea:focus {
+    border: 0;
 }
 
 form button {
@@ -42,7 +41,7 @@ form button {
     background-color: rgb(41, 122, 76);
 }
 form button:hover {
-    cursor: pointer;
+    /* cursor: default; */
     background-color: seagreen;
 }
 
