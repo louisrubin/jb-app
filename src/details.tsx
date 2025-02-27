@@ -19,6 +19,9 @@ const details = {
     // CONFIG WHATSAPP
     mensajeWhatsApp: '¡Hola! Te escribo desde la página web y quisiera coordinar una cita. Saludos!',
 
+    // URL's
+    urlMap: 'https://maps.app.goo.gl/B3EJjabrBhEHz83e8',
+
 }
 
 export default details;

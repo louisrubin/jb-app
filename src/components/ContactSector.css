@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Noto+Sans+SC:wght@100..900&display=swap');
+
+
+
+.contact-sector {
+    font-family: "Noto Sans SC", serif;
+    /* font-family: "Bona Nova SC", serif; */
+    border-radius: 16px;
+}
+
+.subtitulo , .tel-corr-addr span {
+    color: rgb(61, 61, 61);
+}
+
+.info-princ {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.tel-corr-addr a:hover {
+    text-decoration: underline;
+}
+
+.contact-sector input, textarea {
+    font-size: 0.8em;
+    color: black;
+    text-transform: uppercase;
+
+
+
+    background-color: white;
+    border-radius: 5px;
+    border: 1px black;
+
+    /* margin-bottom: 20px; */
+    padding-left: 1em;
+    /* margin: 10px; */
+}
+
+form button {
+    border-radius: 10px;
+    background-color: rgb(41, 122, 76);
+}
+form button:hover {
+    cursor: pointer;
+    background-color: seagreen;
+}
+
+
+/*  QUITAR FLECHITAS EN INPUT TIPO 'NUMBER'  */
+/* Para navegadores basados en WebKit (Chrome, Safari) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Para Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+/* SCROLL BAR DEL TEXT AREA */
+/* Para navegadores basados en WebKit (Chrome, Edge, Safari) */
+textarea::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra */
+  }
+  
+  textarea::-webkit-scrollbar-thumb {
+    background-color: #424242; /* Color del "pulgar" */
+    border-radius: 4px; /* Bordes redondeados */
+  }
+  
+  textarea::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color del fondo */
+  }
