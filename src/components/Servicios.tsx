@@ -1,5 +1,5 @@
 import './Servicios.css';
-import imagenServicios from '../assets/justicia-servicios.jpg';
+// import imagenServicios from '../assets/justicia-servicios.jpg';
 // import JB_logo from '/JB-light.png';
 import familyIcon from '../assets/services/family.png';
 import jobIcon from '../assets/services/job.png';
@@ -8,21 +8,23 @@ import justiceIcon from '../assets/services/justice.png';
 import signingIcon from '../assets/services/signing.png';
 import bankIcon from '../assets/services/bank.png';
 import ServicioCard from './ServicioCard';
-import ServiciosFooter from './ServiciosFooter';
+// import ServiciosFooter from './ServiciosFooter';
 
 
 export default function Servicios() {
     return (
-        <div className='servicios-conteiner bg-gray-700'>
+        <div id='servicios-container' 
+            className='servicios-conteiner bg-gray-700 md:pt-22'>
             <div className="w-4/5 md:w-2/3 mx-auto py-12 uppercase text-center">
                 <h2 id='h2-titulo-servicios' className='text-4xl text-bold'>Áreas de especialización</h2>
                 <p className='mt-6'>Asesoramiento legal profesional y personalizado.</p>
             </div>
 
-            <div className='flex flex-wrap justify-evenly w-4/5 mb-10 mx-auto gap-2'>
+            <div className='flex flex-wrap justify-evenly w-4/5 mx-auto gap-2'>
                 {
                     serviciosList.map( (item) => (
                         <ServicioCard 
+                            key={item.titulo}
                             titulo={item.titulo} 
                             descripcion={item.descripcion}
                             imagen={item.imagen} 
@@ -30,8 +32,6 @@ export default function Servicios() {
                     ) )
                 }
             </div>
-            
-            <ServiciosFooter />
 
             {/* <img className='zoom scale-x-[-1]' src={imagenServicios} /> */}
         </div>

@@ -7,6 +7,7 @@ export default function MainContent() {
 
   return (
     <div
+      id="main-content-container"
       className="relative inset-0 h-screen w-full bg-cover bg-no-repeat"
       style={{
         backgroundImage: `url(${EstatutoAbogacia})`,

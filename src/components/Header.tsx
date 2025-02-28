@@ -6,9 +6,9 @@ import details from "../details";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [menuMovile, setMenuMovile] = useState(false);
+  // const [menuMovile, setMenuMovile] = useState(false);
 
-  const toggleMenu = () => setMenuMovile(!menuMovile); // invierte el boolean
+  // const toggleMenu = () => setMenuMovile(!menuMovile); // invierte el boolean
 
   useEffect(() => {
     // maneja el scroll, si baja el header se achica
@@ -25,6 +25,14 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // const containerRef = useRef<HTMLDivElement>(null);
+  // function para desplazar la pantalla hacia el contenido
+  const scrollToSection = (idParam: string) => {
+    const section = document.getElementById(idParam);
+    if (section) {
+      section.scrollIntoView( {behavior: "smooth", block: "center"} );
+    }
+  }
 
   return (
     <header
@@ -42,9 +50,12 @@ export default function Header() {
         </a>
 
         <div className="flex justify-center items-center select-none">
-            <a href="#" className="mr-1 md:mr-2">
+            <a 
+                onClick={ () => { scrollToSection(componentsNav[0].href_id)} } 
+                className="mr-1 md:mr-2 cursor-pointer">
                 <img src={logoHeader} className="h-20 md:h-24" />
             </a>
+
             <div>
                 <h1 className={`md:text-3xl font-bold text-3xl `}>
                     {details.nombre}
@@ -56,8 +67,8 @@ export default function Header() {
 
         <div className={`hidden md:flex justify-center items-center text-xs `}>
             {componentsNav.map((item) => (
-            <a key={item.text} href={item.href} 
-                className={`btn ${!isScrolled ? " px-5 py-3 " : "px-3 py-1" }`}>
+            <a key={item.text}  onClick={ () => scrollToSection(item.href_id) }
+                className={`btn cursor-pointer ${!isScrolled ? " px-5 py-3 " : "px-3 py-1" }`}>
                 {item.text}
             </a>
             ))}
@@ -101,27 +112,27 @@ export default function Header() {
 
 const componentsNav = [
   {
-    href: "#",
+    href_id: "main-content-container",
     text: "Inicio",
     icon: "",
   },
   {
-    href: "#",
+    href_id: "servicios-container",
     text: "Servicios",
     icon: "",
   },
   {
-    href: "#",
+    href_id: "#",
     text: "Nosotros",
     icon: "",
   },
   {
-    href: "#",
+    href_id: "#",
     text: "Preguntas",
     icon: "",
   },
   {
-    href: "#",
+    href_id: "contact-sector",
     text: "Contacto",
     icon: "",
   },
