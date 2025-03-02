@@ -1,4 +1,6 @@
 // ARCHIVO PARA APARTAR LAS FUNCIONES Y LÓGICA
+import emailjs from "@emailjs/browser";
+import credentials from "../credentials";
 
 export interface FormData {
     name: string;
@@ -7,30 +9,38 @@ export interface FormData {
     mensaje: string;
 }
 
+export function capitalizeWords(sentence: string): string {
+  // capitalizar cada palabra
+  return sentence.replace(/\b\w/g, (char) => char.toUpperCase());
+}
+
 export const validarForm = (data: FormData): boolean => {
     return data.name.trim() !== "" 
-            && data.telefono.toString() !== "" 
+            && data.telefono.trim() !== "" 
             && data.email.trim() !== ""
             && data.mensaje.trim() !== "";
 };
 
-
-// Enviar formulario usando EmailJS
-// import emailjs from "emailjs-com";       // IMPORTAR
-                                            // npm install emailjs-com
-
 export const sendEmail = async (formData: FormData) => {
   try {
-    const response = "ok";
-    // const response = await emailjs.send(
-    //   "TU_SERVICE_ID", // Reemplázalo con tu Service ID
-    //   "TU_TEMPLATE_ID", // Reemplázalo con tu Template ID
-    //   formData,
-    //   "TU_PUBLIC_KEY" // Reemplázalo con tu Public Key de EmailJS
-    // );
+    // const response = "ok";
+    const response = await emailjs.send(
+      credentials.EmailJS_serviceID ,
+      credentials.EmailJS_TemplateID,
+      // formData,
+      {
+        name: capitalizeWords(formData.name),  
+        telefono: formData.telefono,  
+        correo: formData.email,  
+        mensaje: formData.mensaje,
+      },
+      // "gskldksa"
+      credentials.EmailJS_PublicKey // Reemplázalo con tu Public Key de EmailJS
+    );
     
     console.log("Correo enviado correctamente:", response);
     return true;
+    
   } catch (error) {
     console.error("Error al enviar el correo:", error);
     return false;

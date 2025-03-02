@@ -14,6 +14,8 @@
 }
 
 .servicioCard {
+    /* background-color: rgb(0, 60, 51, 1); */
+    background-color: #24464c;
     border-radius: 20px;
 }
 .servicioCard:hover {
@@ -23,8 +25,4 @@
 
 .servicioCard h3 {
     font-family: "Tienne", serif;
-}
-
-.servicioCard {
-    background-color: rgb(0, 60, 51, 1);
 }

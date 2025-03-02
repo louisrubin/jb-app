@@ -127,7 +127,7 @@ const componentsNav = [
     icon: "",
   },
   {
-    href_id: "#",
+    href_id: "faq-container",
     text: "Preguntas",
     icon: "",
   },

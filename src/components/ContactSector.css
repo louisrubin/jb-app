@@ -45,6 +45,11 @@ form button:hover {
     background-color: seagreen;
 }
 
+.span-email-error {
+    margin-bottom: 5px;
+    color: rgb(220, 1, 1);
+}
+
 
 /*  QUITAR FLECHITAS EN INPUT TIPO 'NUMBER'  */
 /* Para navegadores basados en WebKit (Chrome, Safari) */

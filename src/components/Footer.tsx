@@ -44,7 +44,7 @@ export default function Footer() {
 					<li className="mb-8">
 						<a
 						href={details.urlMap}
-						className="flex justify-center items-center"
+						className="flex justify-center items-center disabled"
 						target="_blank"
 						rel="noopener noreferrer"
 						>

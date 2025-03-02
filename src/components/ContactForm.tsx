@@ -10,12 +10,16 @@ export default function ContactForm() {
       mensaje: "",
     });
     const [isValid, setIsValid] = useState(false);
+    const [isSending, setIsSending] = useState(false);
+    // const [success, setSuccess] = useState(false);
+    const [error, setError] = useState(false);
 
      // Manejar cambios en los inputs
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         const newFormData = { ...formData, [name]: value };
 
+        setError(false);    // para que esconda el mensaje de error
         setFormData(newFormData);
         setIsValid(validarForm(newFormData));   // validad formulario
     };
@@ -23,15 +27,23 @@ export default function ContactForm() {
     // Manejar el envío del formulario
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        // config hooks
+        setIsSending(true);     // cambia boton --> "enviando..."
+        setError(false);
+        // setSuccess(false);
+
         const success = await sendEmail(formData);
 
         if (success) {
             alert(`📪Consulta enviada correctamente📧`);
             setFormData({ name: "", telefono: "", email: "", mensaje: "" });
             setIsValid(false);
+            // setSuccess(true);       // envio exitoso
         } else {
-            alert("Error al enviar el correo");
+            // alert("Error al enviar el correo");
+            setError(true);        // error al enviar
         }
+        setIsSending(false);
     };
 
     return(
@@ -73,14 +85,15 @@ export default function ContactForm() {
                     onChange={handleChange}
                     />
                 
-                <div className={`w-4/5 md:w-3/5 mx-auto mt-4`}
-                    >
+                <div className={`w-4/5 md:w-3/5 mx-auto mt-4`}>
+                    <span className={`span-email-error text-xs uppercase ${error ? 'block' : 'hidden'}`}>Hubo un error al enviar su consulta.</span>
                     <button 
                         type="submit"
-                        className={`w-full h-12 md:h-8 bg-blue-700 uppercase ${!isValid ? "opacity-50 " : "cursor-pointer" }`} 
-                        disabled={!isValid}
+                        className={`w-full h-12 md:h-8 uppercase 
+                            ${!isValid ? "opacity-50" : "cursor-pointer" }`} 
+                            disabled={!isValid}
                         >
-                            Enviar Consulta
+                            { isSending ? "Enviando..." : "Enviar Consulta"}                            
                     </button>
                 </div>
                 
