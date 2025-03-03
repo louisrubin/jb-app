@@ -4,14 +4,12 @@
 }
 
 header h1 {
-  font-family: "Tienne", serif;
+  /* font-family: "Tienne", serif; */
+  font-family: "Merriweather", serif;
+  text-transform: uppercase;
 }
 
 .btn{
-  /* color:#cccccc; */
-  /* background:rgba(0, 0, 0, 0.5); */
-  /* padding:10px 20px; */
-  /* font-size:12px; */
   text-decoration:none;
   /* letter-spacing:2px; */
   text-transform: uppercase;

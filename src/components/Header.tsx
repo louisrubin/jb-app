@@ -57,7 +57,7 @@ export default function Header() {
             </a>
 
             <div>
-                <h1 className={`md:text-3xl font-bold text-3xl `}>
+                <h1 className={`text-2xl md:text-3xl font-bold`}>
                     {details.nombre}
                 </h1>
                 <p className="text-xs ">{details.descripcion}</p>
