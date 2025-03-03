@@ -1,4 +1,13 @@
 
 .accordion-trigger {
-    /* background-color: rgb(15, 58, 40); */
+    background-color: #1c373b;
+    /* color: black; */
+}
+.accordion-trigger:hover {
+    background-color: #182e33;
+}
+
+.acordion-respuesta {
+    background-color: #24464c;
+    border-radius: 0 0 8px 8px;
 }

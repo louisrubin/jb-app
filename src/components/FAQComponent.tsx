@@ -20,17 +20,17 @@ const FAQComponent = () => {
                         
                         {/* PREGUNTA */}
                         <Accordion.Header>
-                            <Accordion.Trigger className="accordion-trigger w-full flex justify-between items-center p-4 text-left md:text-lg font-medium bg-gray-800 hover:bg-gray-700 transition border rounded-md">
+                            <Accordion.Trigger className="accordion-trigger w-full flex justify-between items-center p-4 md:px-8 text-left md:text-lg font-medium border rounded-md">
                                 {item.pregunta}
-                                <ChevronDown className="h-5 w-5 transition-transform duration-200 AccordionChevron" />
+                                <ChevronDown className="h-5 w-5 AccordionChevron" />
                             </Accordion.Trigger>
                         </Accordion.Header>
 
                         {/* RESPUESTA */}
-                        <Accordion.Content className="acordion-respuesta flex flex-col p-4 ">
+                        <Accordion.Content className="acordion-respuesta p-4 md:px-8">
                             <p className='mb-3'>{item.respuesta}</p>
                             <p className='mb-6'>{item.respuesta2}</p>
-                            <span className='text-center italic text-yellow-400 w-5/6 md:w-2/3 mx-auto'>{item.cierre}</span>
+                            <p className='text-center italic text-yellow-400 w-5/6 md:w-2/3 mx-auto'>{item.cierre}</p>
                         </Accordion.Content>
                     </Accordion.Item>
                 ))}
@@ -77,8 +77,8 @@ const PREGUNTAS_RESP: FAQItem[] = [
 
     {
         pregunta: '¿Qué debo hacer para iniciar mi divorcio?',
-        respuesta: 'Para iniciar un divorcio, tenés dos opciones: solicitarlo de manera conjunta, si ambos cónyuges están de acuerdo, o de manera unilateral, si solo uno lo pide. No es necesario justificar una causa ni cumplir con un plazo previo. Solo se debe presentar un convenio regulador que establezca cómo se dividirán los bienes, la custodia de los hijos (si los hay) y otros acuerdos relacionados.',
-        respuesta2: '',
+        respuesta: 'Para iniciar un divorcio, tenés dos opciones: solicitarlo de manera conjunta, si ambos cónyuges están de acuerdo, o de manera unilateral, si solo uno lo pide.',
+        respuesta2: 'No es necesario justificar una causa ni cumplir con un plazo previo. Solo se debe presentar un convenio regulador que establezca cómo se dividirán los bienes, la custodia de los hijos (si los hay) y otros acuerdos relacionados.',
         cierre: '¡Consultanos!',
     },
     {
