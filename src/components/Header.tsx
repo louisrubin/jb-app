@@ -30,7 +30,7 @@ export default function Header() {
   const scrollToSection = (idParam: string) => {
     const section = document.getElementById(idParam);
     if (section) {
-      section.scrollIntoView( {behavior: "smooth", block: "center"} );
+      section.scrollIntoView( {behavior: "smooth", block: "start"} );
     }
   }
 
@@ -117,13 +117,13 @@ const componentsNav = [
     icon: "",
   },
   {
-    href_id: "servicios-container",
-    text: "Servicios",
+    href_id: "#",
+    text: "Nosotros",
     icon: "",
   },
   {
-    href_id: "#",
-    text: "Nosotros",
+    href_id: "servicios-container",
+    text: "Servicios",
     icon: "",
   },
   {

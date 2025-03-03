@@ -11,7 +11,7 @@ interface FAQItem {
 
 const FAQComponent = () => {
     return(
-        <div id="faq-container" className="my-10 md:my-20 w-6/7 md:w-3/4 mx-auto">
+        <div id="faq-container" className="scroll-mt-35 my-10 md:my-20 w-6/7 md:w-3/4 mx-auto">
             <h1 className="font-bold text-center text-3xl mb-10">Preguntas</h1>
 
             <Accordion.Root type="single" collapsible className="w-full max-w-2xl mx-auto space-y-6">
@@ -35,6 +35,11 @@ const FAQComponent = () => {
                     </Accordion.Item>
                 ))}
             </Accordion.Root>
+
+            <h2 className='mt-10 text-lg italic text-center '>
+                ¿Tenés otra duda? Comunícate
+                <span className='not-italic'> 👇</span>
+            </h2>
         </div>
     );
 }

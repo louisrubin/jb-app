@@ -4,7 +4,7 @@ import './ContactSector.css';
 
 const ContactSector = () => {
     return(
-        <div id='contact-sector' className='contact-sector flex flex-col my-13 p-4/5 md:w-4/5 mx-auto bg-gray-400 lg:flex-row '>
+        <div id='contact-sector' className='contact-sector scroll-mt-40 flex flex-col my-13 p-4/5 md:w-4/5 mx-auto bg-gray-400 lg:flex-row '>
             <div className='left-contact-sector text-black lg:w-1/2 py-8 px-10 '>
                 <h2 className='tittle-form-left text-2xl text-black font-bold pb-2 uppercase text-center'>Comunícate con nosotros</h2>
                 <p className='subtitulo text-center italic w-4/5 mx-auto text-xs pb-5'>Completa el formulario o a través de nuestros medios de comunicación debajo</p>
