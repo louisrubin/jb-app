@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+
+#presentation-container {
+    /* 24464c */
+    background-color: #326169;
+    font-family: "Gabarito", sans-serif;
+}
+.estudio-left h2 {
+    font-family: "Merriweather", serif;
+}
+
+.estudio-left strong {
+    /* background-color: rgb(250, 200, 50); */
+    color: black;
+    padding: 5px 30px;
+
+    border-radius: 20px;
+}
+.estudio-left strong:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .estudio-left strong {
+        padding-right: 1.5em;
+        font-size: 1.1em;
+    }
+  }

@@ -117,13 +117,13 @@ const componentsNav = [
     icon: "",
   },
   {
-    href_id: "#",
-    text: "Nosotros",
+    href_id: "presentation-container",
+    text: "El Estudio",
     icon: "",
   },
   {
     href_id: "servicios-container",
-    text: "Servicios",
+    text: "Areas de Especialización",
     icon: "",
   },
   {
