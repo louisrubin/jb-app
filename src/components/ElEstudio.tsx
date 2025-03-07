@@ -11,8 +11,8 @@ const ElEstudio = () => {
     }
 
     return(
-        <div id="presentation-container" className="md:flex justify-evenly gap-8 scroll-mt-26 mx-auto py-15 px-10 lg:px-55 my-2 text-start bg-gray-300 rounded-xl">
-            <div className="estudio-left flex flex-col gap-8 md:w-2/3 text-lg ">
+        <div id="presentation-container" className="md:flex justify-evenly gap-8 scroll-mt-45 mx-auto py-15 px-10 lg:px-75 my-2 text-start bg-gray-300 rounded-xl">
+            <div className="estudio-left flex flex-col gap-8 md:w-2/3 text-xl ">
             
                 <h2 className="self-start text-3xl font-bold uppercase">El Estudio</h2>
 
@@ -20,10 +20,10 @@ const ElEstudio = () => {
                 
                 <p>Nos caracterizamos por brindar un asesoramiento y acompañamiento jurídico con responsabilidad, eficacia y seriedad.</p>
                 
-                <strong onClick={handleClick} className={`self-end text-right italic ${bgColor ? "bg-[#ffff82]" : "bg-[#FAC832]" }`}>JB Estudio Jurídico <span className="not-italic">⚖️</span></strong>
+                <strong onClick={handleClick} className={`self-end text-right italic select-none ${bgColor ? "bg-[#ffff82]" : "bg-[#FAC832]" }`}>JB Estudio Jurídico <span className="not-italic">⚖️</span></strong>
             </div>
 
-            <div className="estudio-right mt-10 md:mt-0  md:w-1/3 ">
+            <div className="estudio-right mt-10 md:mt-0  md:w-1/4 ">
                 {/* <h1 className="text-center p-30 ">right side</h1> */}
                 <img src={ jbEstudio } className=' '/>
             </div>
