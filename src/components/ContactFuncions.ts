@@ -1,6 +1,6 @@
 // ARCHIVO PARA APARTAR LAS FUNCIONES Y LÓGICA
 import emailjs from "@emailjs/browser";
-import credentials from "../credentials";
+import { config } from "../config";
 
 export interface FormData {
     name: string;
@@ -25,8 +25,8 @@ export const sendEmail = async (formData: FormData) => {
   try {
     // const response = "ok";
     const response = await emailjs.send(
-      credentials.EmailJS_serviceID ,
-      credentials.EmailJS_TemplateID,
+      config.emailJsServiceId,
+      config.emailJsTemplateId,
       // formData,
       {
         name: capitalizeWords(formData.name),  
@@ -34,8 +34,8 @@ export const sendEmail = async (formData: FormData) => {
         correo: formData.email,  
         mensaje: formData.mensaje,
       },
-      // "gskldksa"
-      credentials.EmailJS_PublicKey // Reemplázalo con tu Public Key de EmailJS
+      
+      config.emailJsPublicKey // Reemplázalo con tu Public Key de EmailJS
     );
     
     console.log("Correo enviado correctamente:", response);

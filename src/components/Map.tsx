@@ -1,8 +1,9 @@
-import credentials from '../credentials';
+import { config } from '../config';
 import { GoogleMap, LoadScript, MarkerF } from '@react-google-maps/api';
+// import details from '../details';
 
 export default function MapComponent() {    
-    const labelMarket = "JB Estudio Jurídico";
+    // const labelMarket = details.nombre;
     const zoomMap = 15.8;
 
     const containerStyle = {
@@ -27,7 +28,7 @@ export default function MapComponent() {
     };
 
     return (
-      <LoadScript googleMapsApiKey={credentials.googleMapsApiKey}>
+      <LoadScript googleMapsApiKey={ config.mapKey }>
         <GoogleMap
           mapContainerStyle={containerStyle}
           center={centerObject}
@@ -35,7 +36,7 @@ export default function MapComponent() {
           options={optionsObject}
         >
           <MarkerF position={centerObject}
-          label={labelMarket}
+          // label={labelMarket}
           />
         </GoogleMap>
       </LoadScript>
