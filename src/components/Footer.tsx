@@ -1,6 +1,6 @@
 import logoJB from "../assets/JB-light.png";
 import "./Footer.css";
-// import MapComponent from "./Map";
+import MapComponent from "./Map";
 import details from "../details";
 import SocialFooter from "./SocialFooter";
 
@@ -90,7 +90,7 @@ export default function Footer() {
 			</div>
 
 			<div className="mt-5 md:mt-0 w-4/5 md:w-2/5 mx-auto md:mx-0 ">
-				{/* <MapComponent /> */}
+				<MapComponent />
 			</div>
 			
 		</div>
