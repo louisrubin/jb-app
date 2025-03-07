@@ -1,5 +1,6 @@
 import details from "../details";
-import EstatutoAbogacia from "../assets/Estatuto-Abogacía-scaled-reduced.jpg";
+// import EstatutoAbogacia from "../assets/Estatuto-Abogacía-scaled-reduced.jpg";
+import EstatutoAbogacia from "../assets/Estatuto-Abogacia-2.jpg";
 import "./MainContent.css";
 import ContactButton from "./ContactButton";
 

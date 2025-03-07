@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 #presentation-container {
     /* 24464c */
     background-color: #326169;
-    font-family: "Gabarito", sans-serif;
+    /* font-family: "Spectral", serif; */
 }
 .estudio-left h2 {
     font-family: "Merriweather", serif;
@@ -26,3 +26,11 @@
         font-size: 1.1em;
     }
   }
+
+.estudio-right {
+    padding: 2.5em 0;
+    padding-left: 1em;
+    background-color: rgba(168, 168, 168, 0.2) ;
+    border-radius: 300px;
+    box-shadow: 2px 2px 20px 8px rgba(0, 0, 0, 0.2);
+}
