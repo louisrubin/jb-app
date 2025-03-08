@@ -1,6 +1,6 @@
 import "./Footer.css";
 import MapComponent from "./Map";
-import details from "../details";
+// import details from "../details";
 import SocialFooter from "./SocialFooter";
 import DecorationFooter from "./DecorationFooter";
 
@@ -93,9 +93,9 @@ export default function Footer() {
 			
 		</div>
       
-		<div className="mt-6 w-2/3 mx-auto opacity-50">
-			<p className="mb-4 text-xs text-center">Seguinos</p>
-			<SocialFooter />
+		<div className="mt-12 w-2/3 mx-auto opacity-50">
+			{/* <p className="mb-4 text-xs text-center">Seguinos</p>
+			<SocialFooter /> */}
 		</div>
 	
 		

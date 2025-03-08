@@ -68,44 +68,13 @@ export default function Header() {
         <div className={`hidden md:flex justify-center items-center text-xs `}>
             {componentsNav.map((item) => (
             <a key={item.text}  onClick={ () => scrollToSection(item.href_id) }
-                className={`btn cursor-pointer ${!isScrolled ? " px-5 py-3 " : "px-3 py-1" }`}>
+                className={`btn cursor-pointer px-3  ${ !isScrolled ? "py-3 " : "py-2" }`}>
                 {item.text}
             </a>
             ))}
             
         </div>
 
-        {/* OPCIONES EN MOVILE */}
-
-        {/* Mobile Menu Button */}
-        {/* <div className="flex justify-end md:hidden pr-6">
-            <button
-            className="text-gray-700 dark:text-gray-200 "
-            onClick={toggleMenu}
-            >
-            {menuMovile ? (
-                <img src={menuLogo} className="h-8" />
-            ) : (
-                <img src={menuLogo} className="h-8 -rotate-90" />
-            )}
-            </button>
-        </div>
-
-        {menuMovile && (
-            <ul
-            className={`overflow-hidden transition-all duration-700 max-h-0 ${
-                menuMovile ? "max-h-96" : ""
-            }`}
-            >
-            {componentsNav.map((item) => (
-                <li className="my-4 uppercase mx-22 text-2xl bg-gray-900 hover:text-yellow-500">
-                <a key={item.text} href={item.href} className="btn-2">
-                    {item.text}
-                </a>
-                </li>
-            ))}
-            </ul>
-        )} */}
     </header>
   );
 }
@@ -128,7 +97,7 @@ const componentsNav = [
   },
   {
     href_id: "faq-container",
-    text: "Preguntas",
+    text: "Preguntas frecuentes",
     icon: "",
   },
   {

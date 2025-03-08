@@ -22,6 +22,7 @@ const details = {
     // URL's
     urlMap: 'https://maps.app.goo.gl/B3EJjabrBhEHz83e8',
     instagram_URL: 'https://www.instagram.com/jb.estudiojuridico/',
+    facebook_URL: 'https://www.facebook.com/share/166wyY8Tr2/?mibextid=wwXIfr',
     tiktok_URL: '#',
     twitter_URL: '#',
     youtube_URL: '#',

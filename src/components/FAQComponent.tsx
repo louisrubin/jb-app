@@ -12,7 +12,7 @@ interface FAQItem {
 const FAQComponent = () => {
     return(
         <div id="faq-container" className="scroll-mt-35 my-10 md:my-20 w-6/7 md:w-3/4 mx-auto">
-            <h1 className="font-bold text-center text-3xl mb-10">Preguntas</h1>
+            <h1 className="font-bold text-center text-3xl mb-10">Preguntas frecuentes</h1>
 
             <Accordion.Root type="single" collapsible className="w-full max-w-2xl mx-auto space-y-6">
                 {PREGUNTAS_RESP.map((item, index) => (
