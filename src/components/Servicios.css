@@ -20,7 +20,9 @@
 }
 .servicioCard:hover {
     /* background-color: rgb(44, 44, 44); */
-    box-shadow: 4px 2px 10px rgba(255, 140, 46, 0.4);
+    background-color: #706a44 ;
+    /* box-shadow: 4px 2px 10px rgba(255, 140, 46, 0.4); */
+    /* border: 2px solid #cac4a2 ; */
 }
 
 .servicioCard h3 {

@@ -1,25 +1,23 @@
-import logoJB from "../assets/JB-light.png";
 import "./Footer.css";
 import MapComponent from "./Map";
 import details from "../details";
 import SocialFooter from "./SocialFooter";
+import DecorationFooter from "./DecorationFooter";
 
 export default function Footer() {
   return (
     <div className="pt-2 pb-8 md:px-30">
-		<div className="flex flex-col items-center mb-6 select-none">
-			<img src={logoJB} alt="JB Estudio Jurídico" className="h-30 px-2" />
-			<span id="span-jb-footer">{details.nombre}</span>
-		</div>
+		
+		<DecorationFooter />
 
-		<p id="p-footer-frase" className="text-center md:px-10 w-4/5 mx-auto uppercase">
+		<p id="p-footer-frase" className="text-center  md:px-10 w-4/5 md:w-3/5 mx-auto uppercase">
 			Te ofrecemos el apoyo legal que necesitas con una
 			atención personalizada y un equipo de trabajo capacitado para
 			encontrar la mejor solución.
 		</p>
 
 		<div className=" md:w-4/5 mx-auto md:flex md:justify-evenly mt-12">
-			<div id="div-email-address">
+			{/* <div id="div-email-address">
 				<ul className="text-center h-full ">
 					<li className="mb-8">
 						<a
@@ -87,9 +85,9 @@ export default function Footer() {
 					</li>
 
 				</ul>
-			</div>
+			</div> */}
 
-			<div className="mt-5 md:mt-0 w-4/5 md:w-2/5 mx-auto md:mx-0 ">
+			<div className="mt-5 md:mt-0 w-4/5 md:w-3/5 mx-auto md:mx-0 ">
 				<MapComponent />
 			</div>
 			

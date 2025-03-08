@@ -9,19 +9,20 @@
     font-family: "Merriweather", serif;
 }
 
-.estudio-left strong {
+.strong-JB {
     /* background-color: rgb(250, 200, 50); */
     color: black;
     padding: 5px 30px;
 
     border-radius: 20px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.7);
 }
-.estudio-left strong:hover {
+.strong-JB {
     cursor: pointer;
 }
 
 @media (max-width: 480px) {
-    .estudio-left strong {
+    .strong-JB {
         padding-right: 1.5em;
         font-size: 0.9em;
     }

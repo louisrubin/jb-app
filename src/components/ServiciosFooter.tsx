@@ -5,12 +5,12 @@ import details from '../details';
 export default function ServiciosFooter(){
     return(
         <div className="servicios-footer-main-container text-center 
-        px-[5%] md:px-[10%] py-[25%] md:py-[8%] md:p-2/3 mx-auto bg-gray-300">
+        px-[5%] md:px-[10%] py-[20%] md:py-[6%] md:p-2/3 mx-auto bg-gray-300">
                 
-                <h2 className="w-full md:w-4/5 mx-auto text-white
+                {/* <h2 className="w-full md:w-4/5 mx-auto text-white
                     text-2xl md:text-3xl mb-8 font-bold p-2 md:p-4 "
                     >ASESORAMIENTO JURÍDICO
-                </h2>
+                </h2> */}
 
                 <h3 className="w-[90%] md:w-3/5 mx-auto text-xl md:text-2xl font-bold mb-14 md:mb-10 uppercase"
                     >Trabajamos para ayudarte ante situaciones familiares, laborales, judiciales y civíles.

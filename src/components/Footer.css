@@ -1,6 +1,7 @@
 
 #p-footer-frase {
     font-family: "Tienne", serif;
+    /* font-family: "Merriweather", serif; */
 }
 
 #div-email-address a:hover {
@@ -8,10 +9,18 @@
     text-decoration: underline;
 }
 
+.div-linea {
+    border-top: 3px solid rgba(255, 255, 255, 0.33);
+}
+
 #span-jb-footer{
     /* color: #fff9ce; */
-    color: #fff9ca;
-    font-family: "Tienne", serif;
+    /* color: #fff9ca; */
+    margin-top: 0.5em;
+    color: #cac4a2;
+    /* font-family: "Tienne", serif; */
+    font-family: "Merriweather", serif;
+    /* text-transform: uppercase; */
 }
 
 #social-footer {

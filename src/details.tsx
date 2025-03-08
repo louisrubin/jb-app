@@ -4,7 +4,7 @@ const details = {
     // INFO ESTUDIO
     titulo: 'JB Estudio Jurídico',
     nombre: 'JB Estudio Jurídico',
-    descripcion: 'ABOGADA-MEDIADORA',
+    descripcion: 'ABOGADAS',
     especialidad: 'Especialista en Familia, Sucesiones, Laboral, ART, Jubilaciones.',
 
     // INFO TELEFONO
@@ -13,14 +13,23 @@ const details = {
     telFull: '3624784825',
 
     // CONTACTO ESTUDIO
-    direccion: 'Av. Belgrano 480, 1° Piso, Resistencia, Chaco',
+    direccion: 'Av. Belgrano 480, Resistencia, Chaco',
     email: 'Jb.estudiojuridico@gmail.com',
     
     // CONFIG WHATSAPP
-    mensajeWhatsApp: '¡Hola! Te escribo desde la página web y quisiera coordinar una cita. Saludos!',
+    mensajeWhatsApp: '¡Hola! Les escribo desde la página web y quisiera coordinar un turno para una consulta.',
 
     // URL's
     urlMap: 'https://maps.app.goo.gl/B3EJjabrBhEHz83e8',
+    instagram_URL: 'https://www.instagram.com/jb.estudiojuridico/',
+    tiktok_URL: '#',
+    twitter_URL: '#',
+    youtube_URL: '#',
+
+};
+
+const styles = {
+    color_beige: 'cac4a2',
 
 }
 

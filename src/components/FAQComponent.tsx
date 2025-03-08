@@ -30,7 +30,7 @@ const FAQComponent = () => {
                         <Accordion.Content className="acordion-respuesta p-4 md:px-8">
                             <p className='mb-3'>{item.respuesta}</p>
                             <p className='mb-6'>{item.respuesta2}</p>
-                            <p className='text-center italic text-yellow-400 w-5/6 md:w-2/3 mx-auto'>{item.cierre}</p>
+                            <p className='text-center italic text-[#cac4a2] w-5/6 md:w-2/3 mx-auto'>{item.cierre}</p>
                         </Accordion.Content>
                     </Accordion.Item>
                 ))}
@@ -56,10 +56,10 @@ const PREGUNTAS_RESP: FAQItem[] = [
         cierre: 'Te ofrecemos asesoría personalizada para ayudarte a gestionar tu jubilación.',
     },
     {
-        pregunta: 'Me despidieron estando embarazada. ¿Qué hago?',
-        respuesta: 'La ley establece una prohibición del despido durante el embarazo y parte del plazo posparto. En caso de que esto suceda, la mujer tiene derecho a recibir una indemnización agravada, además de la indemnización por despido ordinario.',
-        respuesta2: 'Esta indemnización adicional corresponde a un año de remuneraciones.',
-        cierre: '¡Contactanos para más información!',
+        pregunta: 'El papá de mis hijos no me pasa la cuota alimentaria. ¿Qué puedo hacer?',
+        respuesta: 'Se debe recurrir a la vía judicial de manera urgente. Los alimentos son una obligación prioritaria, y quien se queda a cargo del cuidado del hijo también cumple con esta obligación.',
+        respuesta2: '',
+        cierre: '¡Contáctanos para que te asesoremos y resolvamos tu situación!',
     },
     {
         pregunta: 'Me dijeron que no vaya más a trabajar. ¿Qué significa?',
@@ -74,6 +74,12 @@ const PREGUNTAS_RESP: FAQItem[] = [
         cierre: '¡No estás solo! En JB ESTUDIO JURÍDICO te apoyamos con asesoría profesional.',
     },
 
+    {
+        pregunta: 'Me despidieron estando embarazada. ¿Qué hago?',
+        respuesta: 'La ley establece una prohibición del despido durante el embarazo y parte del plazo posparto. En caso de que esto suceda, la mujer tiene derecho a recibir una indemnización agravada, además de la indemnización por despido ordinario.',
+        respuesta2: 'Esta indemnización adicional corresponde a un año de remuneraciones.',
+        cierre: '¡Contactanos para más información!',
+    },
 
     {
         pregunta: '¿Qué debo hacer para iniciar mi divorcio?',
@@ -104,12 +110,6 @@ const PREGUNTAS_RESP: FAQItem[] = [
         respuesta: 'Ambos progenitores tienen derecho y obligación de mantener contacto con sus hijos. Si el otro progenitor impide o interrumpe el régimen de comunicación sin una causa justificada, está incurriendo en una falta grave, que incluso puede constituir un delito.',
         respuesta2: 'Si esto ocurre de manera reiterada, podés recurrir a la justicia para exigir su cumplimiento.',
         cierre: 'Te orientamos en cada paso para garantizar que tus derechos sean protegidos.',
-    },
-    {
-        pregunta: 'El papá de mis hijos no me pasa la cuota alimentaria. ¿Qué puedo hacer?',
-        respuesta: 'Se debe recurrir a la vía judicial de manera urgente. Los alimentos son una obligación prioritaria, y quien se queda a cargo del cuidado del hijo también cumple con esta obligación.',
-        respuesta2: '',
-        cierre: '¡Contáctanos para que te asesoremos y resolvamos tu situación!',
     },
     // {
     //     pregunta: '',

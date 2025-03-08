@@ -7,7 +7,9 @@ const ElEstudio = () => {
     // funcion que se me ocurrió y me gustó jaja 
     const [bgColor, setBgColor] =  useState(true);
     const handleClick = () => {
-        setBgColor( ! bgColor);
+        // setBgColor( ! bgColor);
+        console.log(`¡JB Estudio Jurídico!`);
+        
     }
 
     return(
@@ -16,11 +18,11 @@ const ElEstudio = () => {
             
                 <h2 className="self-start text-3xl font-bold uppercase">El Estudio</h2>
 
-                <p>Un asesoramiento preciso y oportuno es fundamental para que tomes decisiones informadas en momentos claves de la vida, como ser al momento de separarse e incluso antes, por conflictos en el trabajo, accidentes y/o enfermedades laborales, fallecimiento de algún familiar, entre otras situaciones, donde lo ideal es consultar con un profesional en derecho.</p>
+                <p>Un asesoramiento preciso y oportuno es fundamental para que tomes decisiones informadas en momentos claves de la vida, como ser al momento de separarse e incluso antes, por conflictos en el trabajo, accidentes y/o enfermedades laborales, fallecimiento de algún familiar, entre otras situaciones, donde lo imprescindible es consultar con un profesional en derecho.</p>
                 
                 <p>Nos caracterizamos por brindar un asesoramiento y acompañamiento jurídico con responsabilidad, eficacia y seriedad.</p>
                 
-                <strong onClick={handleClick} className={`self-end text-right italic select-none ${bgColor ? "bg-[#ffff82]" : "bg-[#FAC832]" }`}>JB Estudio Jurídico <span className="not-italic">⚖️</span></strong>
+                <strong onClick={handleClick} className={`strong-JB self-end text-right italic select-none ${ bgColor ? "bg-[#cac4a2]" : "bg-[#FAC832]" }`}>JB Estudio Jurídico <span className="not-italic">⚖️</span></strong>
             </div>
 
             <div className="estudio-right mt-10 md:mt-0  md:w-1/4 ">
