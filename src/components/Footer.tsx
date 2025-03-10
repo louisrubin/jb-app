@@ -89,7 +89,7 @@ export default function Footer() {
 			</div> */}
 
 			<div className="mt-5 md:mt-0 w-4/5 md:w-3/5 mx-auto md:mx-0 ">
-				{/* <MapComponent /> */}
+				<MapComponent />
 			</div>
 			
 		</div>

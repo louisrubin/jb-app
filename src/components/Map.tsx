@@ -1,44 +1,23 @@
-import { config } from '../config';
-import { GoogleMap, LoadScript, MarkerF } from '@react-google-maps/api';
-// import details from '../details';
 
 export default function MapComponent() {    
-    // const labelMarket = details.nombre;
-    const zoomMap = 15.8;
 
-    const containerStyle = {
+    const style = {
         width: '100%',
-        height: '300px'
-    };
-
-    const optionsObject = {
-        draggable: false,           // Deshabilita el desplazamiento
-        disableDefaultUI: true,     //(oculta o muestra los controles por defecto).
-        zoomControl: true,          //(activa o desactiva el control de zoom).
-        mapTypeControl: false,      //(control para cambiar el tipo de mapa).
-        streetViewControl: false,   //(control de Street View)
-        fullscreenControl: false,    //(botón para pantalla completa)
-        styles: [ /* JSON de estilos personalizados */ ]
-    };
-
-    // -27.450822413834505, -58.9951432907057
-    const centerObject = { 
-        lat: -27.450822413834505, 
-        lng: -58.9951432907057 
+        height: '350px'
     };
 
     return (
-      <LoadScript googleMapsApiKey={ config.mapKey }>
-        <GoogleMap
-          mapContainerStyle={containerStyle}
-          center={centerObject}
-          zoom={zoomMap}
-          options={optionsObject}
-        >
-          <MarkerF position={centerObject}
-          // label={labelMarket}
-          />
-        </GoogleMap>
-      </LoadScript>
+      <div className="select-none">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4864.608182975298!2d-58.99470517088357!3d-27.45084922841933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450dde4478e789%3A0xddba4abe851ac73a!2sJB%20Estudio%20Jur%C3%ADdico!5e0!3m2!1ses!2sar!4v1741629142387!5m2!1ses!2sar" 
+            width={ style.width } 
+            height={ style.height }  
+            style={{ border: 0 }}
+            allowFullScreen={ false } 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade"
+            >
+
+            </iframe>
+      </div>
     );
   }
