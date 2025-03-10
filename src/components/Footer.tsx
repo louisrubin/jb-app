@@ -1,8 +1,9 @@
 import "./Footer.css";
 import MapComponent from "./Map";
 // import details from "../details";
-import SocialFooter from "./SocialFooter";
+// import SocialFooter from "./SocialFooter";
 import DecorationFooter from "./DecorationFooter";
+import BackToTop from "./BackToTop";
 
 export default function Footer() {
   return (
@@ -98,7 +99,7 @@ export default function Footer() {
 			<SocialFooter /> */}
 		</div>
 	
-		
+		<BackToTop />
     </div>
   );
 }

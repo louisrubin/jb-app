@@ -31,7 +31,7 @@ const details = {
 
 const styles = {
     color_beige: 'cac4a2',
-
+    verde_jg: '24464c',
 }
 
 export default details;

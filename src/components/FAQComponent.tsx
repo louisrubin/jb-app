@@ -20,7 +20,7 @@ const FAQComponent = () => {
                         
                         {/* PREGUNTA */}
                         <Accordion.Header>
-                            <Accordion.Trigger className="AccordionTrigger w-full flex justify-between items-center p-4 md:px-8 text-left md:text-lg font-medium border rounded-md">
+                            <Accordion.Trigger className="AccordionTrigger w-full flex justify-between items-center p-4 md:px-8 text-left md:text-lg font-medium border cursor-pointer rounded-md">
                                 {item.pregunta}
                                 <ChevronDown className="AccordionChevron h-5 w-5" />
                             </Accordion.Trigger>

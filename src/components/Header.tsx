@@ -43,7 +43,7 @@ export default function Header() {
             : ""}`}
     >
         <a id="a-direccion" target="_blank" rel="noopener noreferrer"
-            href="https://maps.app.goo.gl/B3EJjabrBhEHz83e8"
+            href={details.urlMap}
             className={`text-gray-200 hover:underline 
                         ${isScrolled ? "md:hidden" : ""}`}
         >   {details.direccion}
