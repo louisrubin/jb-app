@@ -14,23 +14,27 @@ const FAQComponent = () => {
         <div id="faq-container" className="scroll-mt-35 my-10 md:my-20 w-6/7 md:w-3/4 mx-auto">
             <h1 className="font-bold text-center text-3xl mb-10">Preguntas frecuentes</h1>
 
-            <Accordion.Root type="single" collapsible className="w-full max-w-2xl mx-auto space-y-6">
+            <Accordion.Root type="single" collapsible defaultValue='item-0' className="AccordionRoot w-full max-w-2xl mx-auto space-y-6">
                 {PREGUNTAS_RESP.map((item, index) => (
-                    <Accordion.Item key={index} value={`item-${index}`} className="border rounded-lg">
+                    <Accordion.Item key={index} value={`item-${index}`} className="AccordionItem border rounded-lg">
                         
                         {/* PREGUNTA */}
                         <Accordion.Header>
-                            <Accordion.Trigger className="accordion-trigger w-full flex justify-between items-center p-4 md:px-8 text-left md:text-lg font-medium border rounded-md">
+                            <Accordion.Trigger className="AccordionTrigger w-full flex justify-between items-center p-4 md:px-8 text-left md:text-lg font-medium border rounded-md">
                                 {item.pregunta}
-                                <ChevronDown className="h-5 w-5 AccordionChevron" />
+                                <ChevronDown className="AccordionChevron h-5 w-5" />
                             </Accordion.Trigger>
                         </Accordion.Header>
 
                         {/* RESPUESTA */}
-                        <Accordion.Content className="acordion-respuesta p-4 md:px-8">
-                            <p className='mb-3'>{item.respuesta}</p>
-                            <p className='mb-6'>{item.respuesta2}</p>
-                            <p className='text-center italic text-[#cac4a2] w-5/6 md:w-2/3 mx-auto'>{item.cierre}</p>
+                        <Accordion.Content className="AccordionContent">
+                            
+                            <div className='AccordionContentText p-4 md:px-8'>
+                                <p className='mb-3'>{item.respuesta}</p>
+                                <p className='mb-6'>{item.respuesta2}</p>
+                                <p className='text-center italic text-[#cac4a2] w-5/6 md:w-2/3 mx-auto'>{item.cierre}</p>
+                            </div>
+                            
                         </Accordion.Content>
                     </Accordion.Item>
                 ))}
