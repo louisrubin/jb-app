@@ -4,6 +4,7 @@ import MainContent from "./MainContent";
 import ElEstudio from "./ElEstudio";
 import Servicios from "./Servicios";
 import ServiciosFooter from "./ServiciosFooter";
+import GoogleReviews from "./GoogleReviews";
 
 export default function Main() {
   return (
@@ -14,6 +15,7 @@ export default function Main() {
       <ServiciosFooter />
       <FAQComponent />
       <ContactSector />
+      <GoogleReviews />
     </>
   );
 }
