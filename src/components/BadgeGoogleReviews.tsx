@@ -64,7 +64,7 @@ const BadgeGoogleReviews: React.FC<reviewsProps> = ( {theme = "light", cantRevie
                 {/* Enlace a las reseñas */}
                 <div className="mt-2">
                     <a
-                    href="https://search.google.com/local/writereview?placeid=ChIJied4RN4NRZQROscahb5Kut0"
+                    href="https://www.google.com/search?hl=es-AR&gl=ar&q=JB+Estudio+Jur%C3%ADdico,+Av.+Belgrano+480+1%C2%B0+Piso,+H3500+Resistencia,+Chaco&ludocid=15977164810187622202&lsig=AB86z5XbCySMJG5O6kYV3bflTFRL#"
                     target="_blank"
                     rel="nofollow noopener noreferrer"
                     className="text-blue-600 hover:underline dark:text-blue-400"

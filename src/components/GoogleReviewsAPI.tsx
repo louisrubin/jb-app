@@ -1,5 +1,6 @@
 import { ReactGoogleReviews } from "react-google-reviews";
 import BadgeGoogleReviews from "./BadgeGoogleReviews";
+import { config } from "../config";
 
 const maxReviews = 10;      // cantidad de reseñas a renderizar y mostrar
 
@@ -21,7 +22,7 @@ const GoogleReviewsAPI  = () => {
                 loadingMessage="Cargando comentarios."
                 errorMessage="Hubo un error al cargaros los comentarios."
                 
-                featurableId={import.meta.env.VITE_FEATURABLE_ID}
+                featurableId={config.featurableID}
 
                 renderer={
                     (reviews) => (
