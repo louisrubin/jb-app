@@ -7,21 +7,8 @@ const GoogleReviewsAPI  = () => {
     return (
         <>
             <h2 className="text-center mb-5 mt-15 font-bold text-2xl lg:w-2/3 lg:text-4xl mx-auto">Opiniones de Nuestros Clientes</h2>
-            
-            {/* <ReactGoogleReviews 
-                layout="badge" 
-                badgeClassName="mb-8"
-                loadingMessage="Cargando puntuación."
-                errorMessage="Hubo un error al cargar la puntuación."
-                loaderClassName={ "text-white" }
 
-
-                badgeLabel="Calificación"
-
-                featurableId={import.meta.env.VITE_FEATURABLE_ID}
-            /> */}
-
-            <BadgeGoogleReviews />
+            <BadgeGoogleReviews theme="light" />
 
             <ReactGoogleReviews 
                 layout="custom" 

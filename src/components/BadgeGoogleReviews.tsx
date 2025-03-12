@@ -1,14 +1,20 @@
+import React from "react";
+import details from "../details";
 
+    // PROPS type
+interface reviewsProps {
+    theme?: "light" | "dark";
+    cantReviews?: number;
+  }
+//                                                    default: light                  default:
+const BadgeGoogleReviews: React.FC<reviewsProps> = ( {theme = "light", cantReviews = details.cantReviews } ) => {
 
-
-export default function BadgeGoogleReviews(){
-
-    const cantReviews = 28;     // "Ver las __ opiniones"
+    // const cantReviews = 28;     // "Ver las __ opiniones"
 
     return (
 
-        <div className="mt-6 flex flex-col items-center">
-            <div className="flex flex-row items-center bg-white dark:bg-gray-900 p-2 lg:px-4 rounded-lg shadow-lg">
+        <div className="flex flex-col items-center">
+            <div className={`flex flex-row items-center p-2 lg:px-4 rounded-lg shadow-lg ${theme == "dark" ? "bg-gray-900" : "bg-white" }`}>
                 {/* Google Logo */}
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -36,13 +42,13 @@ export default function BadgeGoogleReviews(){
 
                 {/* Texto de Calificación */}
                 <div className="text-center">
-                <span className="block text-gray-700 dark:text-gray-300 text-sm font-semibold">
+                <span className={`block text-sm lg:text-sm font-semibold ${theme == "dark" ? "text-gray-300" : "text-gray-700" }`}>
                     Calificación
                 </span>
 
                 {/* Calificación y estrellas */}
                 <div className="flex items-center justify-center space-x-2">
-                    <span className="text-2xl font-bold text-gray-900 dark:text-white">
+                    <span className={`text-2xl font-bold ${theme == "dark" ? "text-white" : "text-gray-900" }`}>
                         5.0
                     </span>
                     <div className="relative flex">
@@ -71,3 +77,5 @@ export default function BadgeGoogleReviews(){
     </div>
     )
 }
+
+export default BadgeGoogleReviews;

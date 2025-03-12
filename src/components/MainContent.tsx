@@ -2,9 +2,7 @@ import details from "../details";
 // import EstatutoAbogacia from "../assets/Estatuto-Abogacía-scaled-reduced.jpg";
 import EstatutoAbogacia from "../assets/Estatuto-Abogacia-2.jpg";
 import "./MainContent.css";
-import "./ReviewsCSS.css";
 import ContactButton from "./ContactButton";
-import { ReactGoogleReviews } from "react-google-reviews";
 import BadgeGoogleReviews from "./BadgeGoogleReviews";
 
 export default function MainContent() {
@@ -26,7 +24,7 @@ export default function MainContent() {
 
       <div
         id="main-content"
-        className="relative text-white text-center py-12 pt-45 md:pt-[20%]"
+        className="relative text-white text-center py-12 pt-38 md:pt-[20%]"
         >
           <h1 className="text-5xl font-bold w-3/4 md:w-2/3 mx-auto text-left md:text-center leading-[1.35] drop-shadow-[3px_3px_4px_rgba(0,0,0,1)]">
             Defendemos Tus Derechos,<br/>Protegemos Tu Futuro
@@ -56,25 +54,8 @@ export default function MainContent() {
           </div>
 
 
-          <div className="absolute -bottom-15 lg:bottom-12 lg:right-60">
-            {/* <ReactGoogleReviews 
-                    layout="badge" 
-                    badgeClassName="mt-6"
-                    loaderClassName={ "text-white" }
-
-                    badgeLabel="Calificación"
-                    loadingMessage="Cargando puntuación."
-                    errorMessage="Hubo un error al cargar la puntuación."
-
-                    // badgeContainerStyle={ {"height": "80px"} }
-
-                    theme="dark"
-
-                    featurableId={import.meta.env.VITE_FEATURABLE_ID}                
-                /> */}
-
-
-                <BadgeGoogleReviews />
+          <div className="absolute -bottom-22 lg:bottom-12 lg:right-60">
+                <BadgeGoogleReviews theme="dark" />
           </div>
       </div>
     </div>

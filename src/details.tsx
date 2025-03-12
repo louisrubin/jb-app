@@ -27,11 +27,13 @@ const details = {
     twitter_URL: '#',
     youtube_URL: '#',
 
+    // GOOGLE REVIEWS CANTIDAD
+    cantReviews: 28,
 };
 
-const styles = {
-    color_beige: 'cac4a2',
-    verde_jg: '24464c',
-}
+// const styles = {
+//     color_beige: 'cac4a2',
+//     verde_jb: '24464c',
+// }
 
 export default details;
