@@ -34,7 +34,7 @@ export default function MainContent() {
             {details.especialidad}
           </p>
 
-          <ContactButton>Contáctanos</ContactButton>
+          <ContactButton>{`${details.telArea}-${details.telNum}`}</ContactButton>
 
           <div className="flex items-center justify-center gap-10 lg:gap-6 mt-6 lg:mt-8 lg:w-1/3 mx-auto">
             

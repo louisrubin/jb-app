@@ -11,11 +11,11 @@ export default function Footer() {
 		
 		<DecorationFooter />
 
-		<p id="p-footer-frase" className="text-center  md:px-10 w-4/5 md:w-3/5 mx-auto uppercase">
+		{/* <p id="p-footer-frase" className="text-center  md:px-10 w-4/5 md:w-3/5 mx-auto uppercase">
 			Te ofrecemos el apoyo legal que necesitas con una
 			atención personalizada y un equipo de trabajo capacitado para
 			encontrar la mejor solución.
-		</p>
+		</p> */}
 
 		<div className=" md:w-4/5 mx-auto md:flex md:justify-evenly mt-12">
 			<div className="mt-5 md:mt-0 w-4/5 md:w-3/5 mx-auto md:mx-0 ">
