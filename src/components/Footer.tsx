@@ -18,7 +18,7 @@ export default function Footer() {
 		</p> */}
 
 		<div className=" md:w-4/5 mx-auto md:flex md:justify-evenly mt-12">
-			<div className="mt-5 md:mt-0 w-4/5 md:w-3/5 mx-auto md:mx-0 ">
+			<div className="mt-5 lg:mt-0 w-4/5 md:w-[100%] lg:w-[65%] mx-auto md:mx-0 ">
 				<MapComponent />
 			</div>			
 		</div>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './MainContent.css';
+import arrowUp from '../assets/arrow-up.png';
 
 export default function BackToTop() {
     const [isVisible, setIsVisible] = useState(false);
@@ -25,11 +26,11 @@ export default function BackToTop() {
 
     return(
         <button
-            className={`btn-back-to-top fixed bottom-5 right-5 bg-[#cac4a2] text-black lg:text-lg rounded-3xl p-2 px-3 lg:p-3 lg:px-4 transition-opacity duration-300 cursor-pointer
+            className={`btn-back-to-top fixed bottom-5 right-5 transition-opacity duration-300 cursor-pointer
                 ${ isVisible ? "opacity-70" : "opacity-0" }`}
             onClick={scrollToTop}
         >
-            Volver Arriba
+            <img src={arrowUp} className='h-10 lg:h-13' />
         </button>
     );
 }

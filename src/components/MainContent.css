@@ -1,8 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Tienne:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Instrument+Serif:ital@0;1&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Tienne:wght@400;700;900&display=swap');
 
+
+/* clamp(min, preferido, max) */
 #main-content h1 {    
     /* font-family: "Tienne", serif; */
+    color: white;
     font-weight: 700;
     font-style: normal;
+    text-align: center;
+    font-size: clamp(1.5rem, 11vw, 3rem);
+}
+
+
+
+.especialidad {
+    font-size: clamp(0.5rem, 5vw, 1.5rem);
+}
+
+@media (max-width: 480px) {
+    #main-content h1 {
+        text-align: left;
+    }
+}
+
+@media (height: 600px) {
+    #main-content{
+        padding-top: 25vh;
+    }
 }

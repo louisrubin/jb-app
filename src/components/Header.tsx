@@ -37,15 +37,15 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 w-full transition-transform z-50 
-        text-center pt-4 text-white md:px-50 shadow-lg
+        text-center pt-3 xl:px-[10%] shadow-lg
         ${isScrolled 
-            ? "scrolled transform -translate-y-2 bg-gray-800 md:flex justify-between md:py-0 md:pt-6" 
+            ? "scrolled transform -translate-y-2 bg-gray-800 xl:flex justify-between " 
             : ""}`}
     >
         <a id="a-direccion" target="_blank" rel="noopener noreferrer"
             href={details.urlMap}
             className={`text-gray-200 hover:underline 
-                        ${isScrolled ? "md:hidden" : ""}`}
+                        ${isScrolled ? "xl:hidden" : ""}`}
         >   {details.direccion}
         </a>
 
@@ -53,11 +53,11 @@ export default function Header() {
             <a 
                 onClick={ () => { scrollToSection(componentsNav[0].href_id)} } 
                 className="mr-1 md:mr-2 cursor-pointer">
-                <img src={logoHeader} className="h-20 md:h-24" />
+                <img src={logoHeader} className="w-20 h-20 xl:h-24 xl:w-24" />
             </a>
 
             <div>
-                <h1 className={`text-2xl md:text-3xl font-bold`}>
+                <h1 className={`h1-jb-estudio text-white text-2xl lg:text-3xl font-bold`}>
                     {details.nombre}
                 </h1>
                 <p className="text-xs ">{details.descripcion}</p>
@@ -65,7 +65,7 @@ export default function Header() {
             
         </div>
 
-        <div className={`hidden md:flex justify-center items-center text-xs `}>
+        <div className={`hidden xl:flex justify-center items-center text-xs `}>
             {componentsNav.map((item) => (
             <a key={item.text}  onClick={ () => scrollToSection(item.href_id) }
                 className={`btn cursor-pointer px-3  ${ !isScrolled ? "py-3 " : "py-2" }`}>

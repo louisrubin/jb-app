@@ -16,7 +16,7 @@ export default function Servicios() {
         <div id='servicios-container' 
             className='servicios-conteiner scroll-mt-20 bg-gray-700 md:pt-5'>
             <div className="w-4/5 md:w-2/3 mx-auto py-12 uppercase text-center">
-                <h2 id='h2-titulo-servicios' className='text-4xl text-bold'>Áreas de especialización</h2>
+                <h2 id='h2-titulo-servicios' className='text-3xl md:text-4xl text-bold'>Áreas de especialización</h2>
                 <p className='mt-6'>Asesoramiento legal profesional y personalizado.</p>
             </div>
 

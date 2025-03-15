@@ -13,7 +13,7 @@ const ElEstudio = () => {
     }
 
     return(
-        <div id="presentation-container" className="md:flex justify-evenly gap-8 scroll-mt-45 mx-auto py-15 px-10 lg:px-75 my-2 text-start bg-gray-300 rounded-xl">
+        <div id="presentation-container" className="md:flex justify-evenly gap-8 scroll-mt-45 mx-auto py-15 px-10 2xl:px-75 my-2 text-start bg-gray-300 rounded-xl">
             <div className="estudio-left flex flex-col gap-8 md:w-2/3 text-xl ">
             
                 <h2 className="self-start text-3xl font-bold uppercase">El Estudio</h2>
@@ -25,9 +25,9 @@ const ElEstudio = () => {
                 <strong onClick={handleClick} className={`strong-JB self-end text-right italic select-none ${ bgColor ? "bg-[#cac4a2]" : "bg-[#FAC832]" }`}>JB Estudio Jurídico <span className="not-italic">⚖️</span></strong>
             </div>
 
-            <div className="estudio-right mt-10 md:mt-0  md:w-1/4 ">
+            <div className="estudio-right mt-10 md:mt-0  lg:w-1/4 ">
                 {/* <h1 className="text-center p-30 ">right side</h1> */}
-                <img src={ jbEstudio } className=' '/>
+                <img src={ jbEstudio } className=' mx-auto my-auto '/>
             </div>
         </div>
         

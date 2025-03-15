@@ -15,6 +15,7 @@ export default function MainContent() {
         backgroundImage: `url(${EstatutoAbogacia})`,
         backgroundPositionX: "48%",
         backgroundPositionY: "0%",
+        minHeight: "800px",
         // imagen 2:
         // backgroundPositionX: "60%",
         // backgroundPositionY: "5%",
@@ -24,13 +25,13 @@ export default function MainContent() {
 
       <div
         id="main-content"
-        className="relative text-white text-center py-12 pt-38 md:pt-[20%]"
+        className="relative text-center py-12 pt-38 md:pt-[30%] lg:pt-[25%] xl:pt-[15%]"
         >
-          <h1 className="text-5xl font-bold w-3/4 md:w-2/3 mx-auto text-left md:text-center leading-[1.35] drop-shadow-[3px_3px_4px_rgba(0,0,0,1)]">
+          <h1 className="w-3/4 md:w-full lg:w-2/3 mx-auto leading-[1.35] drop-shadow-[3px_3px_4px_rgba(0,0,0,1)]">
             Defendemos Tus Derechos,<br/>Protegemos Tu Futuro
           </h1>
 
-          <p className="text-lg w-3/4 md:w-1/3 mx-auto my-10 drop-shadow-[2px_5px_3px_rgba(0,0,0,1)]">
+          <p className="especialidad w-3/4 md:w-2/4 lg:w-1/3 mx-auto my-6 md:my-10 drop-shadow-[2px_5px_3px_rgba(0,0,0,1)]">
             {details.especialidad}
           </p>
 
@@ -54,7 +55,7 @@ export default function MainContent() {
           </div>
 
 
-          <div className="absolute -bottom-22 lg:bottom-12 lg:right-60">
+          <div className="flex justify-center w-full mt-8 md:mt-20 lg:mt-15 ">
                 <BadgeGoogleReviews theme="dark" />
           </div>
       </div>

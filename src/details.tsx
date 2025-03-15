@@ -5,7 +5,7 @@ const details = {
     titulo: 'JB Estudio Jurídico',
     nombre: 'JB Estudio Jurídico',
     descripcion: 'ABOGADAS',
-    especialidad: 'Especialista en Familia, Sucesiones, Laboral, ART, Jubilaciones.',
+    especialidad: 'Especialistas en Familia, Sucesiones, Laboral, ART, Jubilaciones.',
 
     // INFO TELEFONO
     telArea: '3624',
@@ -28,7 +28,7 @@ const details = {
     youtube_URL: '#',
 
     // GOOGLE REVIEWS CANTIDAD
-    cantReviews: 28,
+    cantReviews: 29,
 };
 
 // const styles = {
