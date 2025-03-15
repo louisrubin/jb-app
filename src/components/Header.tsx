@@ -37,7 +37,7 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 w-full transition-transform z-50 
-        text-center pt-3 xl:px-[10%] shadow-lg
+        text-center text-white pt-3 xl:px-[10%] shadow-lg
         ${isScrolled 
             ? "scrolled transform -translate-y-2 bg-gray-800 xl:flex justify-between " 
             : ""}`}
@@ -53,7 +53,7 @@ export default function Header() {
             <a 
                 onClick={ () => { scrollToSection(componentsNav[0].href_id)} } 
                 className="mr-1 md:mr-2 cursor-pointer">
-                <img src={logoHeader} className="w-20 h-20 xl:h-24 xl:w-24" />
+                <img src={logoHeader} className="w-20 h-20 xl:h-25 xl:w-25" />
             </a>
 
             <div>

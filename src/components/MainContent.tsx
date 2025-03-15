@@ -25,7 +25,7 @@ export default function MainContent() {
 
       <div
         id="main-content"
-        className="relative text-center py-12 pt-38 md:pt-[30%] lg:pt-[25%] xl:pt-[15%]"
+        className="relative text-center text-white py-12 pt-38 md:pt-[30%] lg:pt-[25%] xl:pt-[15%]"
         >
           <h1 className="w-3/4 md:w-full lg:w-2/3 mx-auto leading-[1.35] drop-shadow-[3px_3px_4px_rgba(0,0,0,1)]">
             Defendemos Tus Derechos,<br/>Protegemos Tu Futuro

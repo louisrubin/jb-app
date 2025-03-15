@@ -3,15 +3,6 @@ import jbEstudio from '../assets/jb-removebg2.png';
 import './ElEstudio.css';
 
 const ElEstudio = () => {
-
-    // funcion que se me ocurrió y me gustó jaja 
-    const [bgColor, setBgColor] =  useState(true);
-    const handleClick = () => {
-        // setBgColor( ! bgColor);
-        console.log(`¡JB Estudio Jurídico!`);
-        
-    }
-
     return(
         <div id="presentation-container" className="md:flex justify-evenly gap-8 scroll-mt-45 mx-auto py-15 px-10 2xl:px-75 my-2 text-start bg-gray-300 rounded-xl">
             <div className="estudio-left flex flex-col gap-8 md:w-2/3 text-xl ">
@@ -22,7 +13,7 @@ const ElEstudio = () => {
                 
                 <p>Nos caracterizamos por brindar un asesoramiento y acompañamiento jurídico con responsabilidad, eficacia y seriedad.</p>
                 
-                <strong onClick={handleClick} className={`strong-JB self-end text-right italic select-none ${ bgColor ? "bg-[#cac4a2]" : "bg-[#FAC832]" }`}>JB Estudio Jurídico <span className="not-italic">⚖️</span></strong>
+                <strong className={`strong-JB self-end text-right italic select-none bg-[#cac4a2]`}>JB Estudio Jurídico <span className="not-italic">⚖️</span></strong>
             </div>
 
             <div className="estudio-right mt-10 md:mt-0  lg:w-1/4 ">
