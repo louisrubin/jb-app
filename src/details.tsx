@@ -7,6 +7,10 @@ const details = {
     descripcion: 'ABOGADAS',
     especialidad: 'Especialistas en Familia, Sucesiones, Laboral, ART, Jubilaciones.',
 
+    // ABOGADAS
+    abogada1_name: 'Joana Britez',
+    abogada2_name: 'Tatiana Pirelli',
+
     // INFO TELEFONO
     telArea: '3624',
     telNum: '784825',
