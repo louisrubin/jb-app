@@ -9,9 +9,8 @@
     font-weight: 700;
     font-style: normal;
     text-align: center;
-    font-size: clamp(1.5rem, 11vw, 3rem);
+    font-size: clamp(1.5rem, 10vw, 2.8rem);
 }
-
 
 
 .especialidad {
@@ -27,5 +26,24 @@
 @media (height: 600px) {
     #main-content{
         padding-top: 25vh;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 767px) {
+    #main-content {
+        padding-top: 170px;
+    }
+    .especialidad{
+        font-size: 20px;
+    }
+}
+
+/* IPHONE SE */
+@media (width: 667px) and (height: 375px) {
+    #main-content {
+        padding-top: 170px;
+    }
+    .especialidad{
+        font-size: 20px;
     }
 }

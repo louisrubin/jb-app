@@ -8,7 +8,7 @@ const ElEstudio = () => {
     return(
         <div id="presentation-container" className="flex flex-col xl:flex-row justify-evenly gap-6 scroll-mt-45 mx-auto py-15 px-10 2xl:px-40 my-2 text-start bg-gray-300 rounded-xl">
             {/* LADO IZQUIERDO */}
-            <div className="estudio-left flex flex-col gap-8 md:w-[90%] mx-auto xl:w-1/2 text-xl ">
+            <div className="estudio-left flex flex-col gap-8 md:w-[90%] lg:w-[75%] mx-auto xl:w-1/2 text-xl ">
             
                 <h2 className="text-center xl:self-start text-3xl font-bold uppercase">El Estudio</h2>
 
