@@ -15,7 +15,7 @@ const JB = ( { className = "" } : props ) => {
     return(
         <strong className={`strong-JB self-end text-right italic bg-[#cac4a2] ${className}`}
         >JB Estudio Jurídico 
-            <span className="not-italic">⚖️</span>
+            <span className="not-italic ml-1">⚖️</span>
         </strong>
     );
 }
@@ -81,14 +81,18 @@ const ElEstudio = () => {
                         
                         
                         <img src={ item.imagen } className='select-none w-full h-full object-cover drop-shadow-[3px_3px_4px_rgba(0,0,0,1)] '/>
-                        <p id='p-nombres-abogadas' className='absolute py-1 bottom-5 w-full text-center bg-[rgba(202,196,162,1)]'>{item.nombre}</p>
+                        <div id='div-nombres' className='absolute bottom-0 w-full text-black text-center bg-[rgba(202,196,162,1)]'>
+                            <p className='py-1'>{item.nombre}</p>
+                            <span className='italic'>{item.profesion}</span>
+                        </div>
+                        
                     </div>
                 ))}
 
             </div>
-
             {   // componente con parametro
-                    isMovile ? <JB className='mt-10' /> : null }
+                    isMovile ? <JB className='mt-10' /> : null 
+            }
         </div>
         
     );
@@ -97,10 +101,12 @@ const ElEstudio = () => {
 const abogadasList = [
     {
         nombre: details.abogada1_name,
+        profesion: 'Abogada',
         imagen: img1,
     },
     {
         nombre: details.abogada2_name,
+        profesion: 'Abogada',
         imagen: img2,
     },
 ]

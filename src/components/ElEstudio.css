@@ -25,12 +25,16 @@
     }
   }
 
-#p-nombres-abogadas {
-    color: black;
+#div-nombres p {
+    /* color: black; */
     font-family: "Merriweather", serif;
     font-weight: 900;
     font-size: clamp(0.4rem, 3.5vw, 1.1rem);
-    box-shadow: 2px 3px 12px rgba(0,0,0,0.7);
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+}
+
+#div-nombres span {
+    font-size: clamp(10px, 0.8rem, 1vw );
 }
 
 @media (width: 1024px) and (height: 600px) {
