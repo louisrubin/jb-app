@@ -17,9 +17,6 @@
     border-radius: 20px;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.7);
 }
-.strong-JB {
-    cursor: pointer;
-}
 
 @media (max-width: 480px) {
     .strong-JB {
@@ -32,7 +29,7 @@
     color: black;
     font-family: "Merriweather", serif;
     font-weight: 900;
-    font-size: clamp(0.5rem, 5vw, 1.5rem);
+    font-size: clamp(0.4rem, 3.5vw, 1.1rem);
     box-shadow: 2px 3px 12px rgba(0,0,0,0.7);
 }
 
