@@ -26,7 +26,8 @@
 .contact-sector input, textarea {
     font-size: 0.8em;
     color: black;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    /* text-transform: capitalize; */
 
     background-color: white;
     border-radius: 5px;

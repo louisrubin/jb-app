@@ -16,8 +16,20 @@ export default function ContactForm() {
 
      // Manejar cambios en los inputs
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        const { name, value } = e.target;
-        const newFormData = { ...formData, [name]: value };
+        const { name, value, tagName, type } = e.target;
+
+        let formattedValue = value;
+
+        if (tagName.toLowerCase() == 'textarea') {
+            // Capitaliza solo la primera letra de cada oración despues de: . ! ?
+            formattedValue = value.replace(/(^\s*\w|[\.\!\?]\s*\w)/g, (c) => c.toUpperCase());
+        } else if (type != 'email') {
+            // capitalizar cada palabra
+            formattedValue = value.replace(/\b\w/g, (char) => char.toUpperCase());
+        }
+
+
+        const newFormData = { ...formData, [name]: formattedValue };
 
         setError(false);    // para que esconda el mensaje de error
         setFormData(newFormData);
@@ -54,7 +66,7 @@ export default function ContactForm() {
                         className="md:w-3/5 h-12 md:h-8" 
                         type="text" 
                         name="name" 
-                        placeholder='Nombre y Apellido' 
+                        placeholder='NOMBRE Y APELLIDO' 
                         value={formData.name}
                         onChange={handleChange}
                         />
@@ -62,7 +74,7 @@ export default function ContactForm() {
                         className="md:w-2/5 h-12 md:h-8" 
                         type="number" 
                         name="telefono" 
-                        placeholder='Teléfono' 
+                        placeholder='TELÉFONO' 
                         value={formData.telefono}
                         onChange={handleChange}
                         />
@@ -72,7 +84,7 @@ export default function ContactForm() {
                     className="w-full h-12 md:h-8 mt-4" 
                     type="email" 
                     name="email" 
-                    placeholder='Correo electrónico' 
+                    placeholder='CORREO ELECTRONICO' 
                     value={formData.email}
                     onChange={handleChange}
                     />
@@ -80,7 +92,7 @@ export default function ContactForm() {
                 <textarea  
                     className="w-full h-45 mt-4 py-2 pr-3 resize-none" 
                     name="mensaje" 
-                    placeholder='Su consulta' 
+                    placeholder='SU CONSULTA' 
                     value={formData.mensaje}
                     onChange={handleChange}
                     />

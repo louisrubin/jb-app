@@ -9,11 +9,6 @@ export interface FormData {
     mensaje: string;
 }
 
-export function capitalizeWords(sentence: string): string {
-  // capitalizar cada palabra
-  return sentence.replace(/\b\w/g, (char) => char.toUpperCase());
-}
-
 export const validarForm = (data: FormData): boolean => {
     return data.name.trim() !== "" 
             && data.telefono.trim() !== "" 
@@ -29,7 +24,7 @@ export const sendEmail = async (formData: FormData) => {
       config.emailJsTemplateId,
       // formData,
       {
-        name: capitalizeWords(formData.name),  
+        name: formData.name,  
         telefono: formData.telefono,  
         correo: formData.email,  
         mensaje: formData.mensaje,
